@@ -1,0 +1,37 @@
+.aboutUsData{
+    font-size: 16px;
+}
+
+.aboutUsDiv{
+   padding-left: 45px; 
+   background-color: white;
+   color: #1F1E1D;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.enquiry{
+    background-color: white;
+    color: #1F1E1D;
+    padding-right: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.enquirytxtarea{
+    width: 350px;
+    font-size:20px;
+}
+
+
+.enquiryli{
+    list-style: none;
+    padding-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    float: left;
+}
+
+.enquirycontrol{
+    width: 350px;
+    height: 35px;
+    font-size:20px;
+}
