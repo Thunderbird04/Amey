@@ -38,29 +38,36 @@
   
     <h2>Enquiry</h2>
     <div>
-      <form>
+      <form id="gform" 
+            method="post" action="https://script.google.com/macros/s/AKfycbxWGF4E46HZodDXFG8z8fd8pTVYhJld3S_cGnbJe-fn5RX3RxGW/exec">
         <ul>
           <li class="enquiryli col-sm-12 col-md-12 col-lg-12">
             <label  for="name">Name</label><br>
-            <input class="enquirycontrol"  type="text" id="name" required>
+            <input class="enquirycontrol"  type="text" id="name" name="name" required>
           </li>
           <li class="enquiryli col-sm-12 col-md-12 col-lg-12">
             <label  for="email">Email Id</label><br>
-            <input class="enquirycontrol" type="email" id="email">
+            <input class="enquirycontrol" type="email" id="email" name="email">
           </li>
           <li class="enquiryli col-sm-12 col-md-12 col-lg-12">
             <label  for="contact">Contact Number</label><br>
-            <input class="enquirycontrol" type="tel" id="contact">
+            <input class="enquirycontrol" type="tel" id="contact" name="contactno">
           </li>
           <li class="enquiryli col-sm-12 col-md-12 col-lg-12">
             <label  for="contact">Query</label><br>
-            <textarea class="enquirytxtarea" rows="4" id="contact"></textarea>
+            <textarea class="enquirytxtarea" rows="4" id="contact" name="query"></textarea>
           </li>
         </ul>
         <div class="col-sm-12 col-md-12 col-lg-12" style="padding-right: 78px;">
-        <button type="submit" class="btn btn-success pull-right">Submit</button>
+        <button type="submit" class="btn btn-success pull-right">Submit</button>        
       </div>
       </form>
+      <div style="display: none" id="thankyou_message">
+          <h2>Thank You for your Submission!!</h2>
+          <h4>Our team will get back to you soon.</h4>
+          </div>
     </div>
   </div>
 </div>
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
